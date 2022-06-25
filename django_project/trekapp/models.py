@@ -6,3 +6,6 @@ class Trek(models.Model):
     days = models.CharField(max_length=200)
     start_destination = models.CharField(max_length=200)
     end_destination = models.CharField(max_length=200)
+
+    def __str__(self):
+        return self.title

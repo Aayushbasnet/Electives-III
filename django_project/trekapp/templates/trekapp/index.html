@@ -1,0 +1,16 @@
+{% extends 'trekapp/base.html' %}
+    
+    {% block content %}
+        <h1>Hello World!</h1>
+        <h3>This is trek {{trek_list.title}}</h3>
+        <p>
+            <ul>
+            <span style = "font-weight : bold;"> More details</span>  
+                <li>Days : {{trek_list.days}}</li>
+                <li>Start Destination : {{trek_list.start_destination}}</li>
+                <li>End Destination : {{trek_list.end_destination}}</li>
+            </ul>
+        </p>
+    {% endblock content %}
+
+    
