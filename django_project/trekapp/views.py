@@ -15,3 +15,5 @@ def trekDetail(request, trek_id):
     }
     return render(request, 'trekapp/index.html', context)
 
+def profile(request, username):
+    return HttpResponse("Profile page of User : {0}".format(username))
