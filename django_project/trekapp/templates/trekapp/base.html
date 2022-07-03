@@ -4,12 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    
+    {% block css_block %}
+    {% endblock css_block %}
+        
 </head>
 <body>
+    <div>
+        <div>
+            {% block content %}
+            {% endblock content %}
+        </div>
+    </div>
     
-    {% block content %}
-    {% endblock content %}
+
+<!-- js cdn -->
+    {% block js_block %}
+    {% endblock js_block %}
         
 </body>
 </html>

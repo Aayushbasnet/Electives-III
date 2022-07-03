@@ -5,7 +5,7 @@ from .models import Trek
 
 # homepage.
 def home(request):
-    return HttpResponse("Hello World !")
+    return render(request, 'trekapp/home.html')
 
 # trek details
 def trekDetail(request, trek_id):
