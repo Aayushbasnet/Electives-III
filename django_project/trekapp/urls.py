@@ -12,7 +12,8 @@ urlpatterns = [
     #login 
     path('login/', views.login, name='login'),
     #dologin
-    path('dologin/', views.dologin, name='dologin')
-    
+    path('dologin/', views.dologin, name='dologin'),
+    # blank page
+    path('blank/', views.blank, name='blank')
     
 ]

@@ -23,3 +23,6 @@ def login(request):
 
 def dologin(request):
     return redirect('/')
+
+def blank(request):
+    return render(request, 'trekapp/blank.html')
